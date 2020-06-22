@@ -11,8 +11,8 @@ class Student
     @id=nil
   end
 
-  def self.create(params)
-    student = Student.new(params[:name],params[:grade])
+  def self.create(name:,grade:)
+    student = Student.new(name,grade)
     student.save
     student
   end
